@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+}
+
+.container {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50vh 40vh 10vh;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "footer footer";
+}
+
+header {
+    background: rgb(255, 99, 71);
+    grid-area: header;
+}
+
+main {
+    background: rgb(255, 255, 0);
+    grid-area: main;
+}
+
+aside {
+    background: #000;
+    grid-area: aside;
+}
+
+footer {
+    background: rgb(0, 128, 0);
+    grid-area: footer;
+}
