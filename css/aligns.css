@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.container  {
+    background: #f0f0f0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* fr = fração, coluna dividida em 3 fraçoes */
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4px; /*CRIA regra de espaçamento semelhante ao margin: 4px;*/
+    
+    justify-content: center;
+    align-content: center;
+}
+
+.item {
+    background: #f57979;
+    width: 50%;
+    height: 50%;
+}
+
+.self-center {
+    justify-self: center;
+    align-self: center;
+}
